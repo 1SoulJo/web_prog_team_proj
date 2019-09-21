@@ -5,10 +5,10 @@ Repository for term project of team Hypertext Assassins.
 Hypertext Assassins
 
 ## Memebers
-Hansol Jo
-Gurmanjot Singh
-Shivalok Netha Rudra
-Reyhaneh
+Hansol Jo 
+Gurmanjot Singh 
+Shivalok Netha Rudra 
+Reyhaneh 
 
 # Project Description
 Build a web site offering comprehensive food service.
