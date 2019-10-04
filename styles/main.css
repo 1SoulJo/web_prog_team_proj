@@ -1,0 +1,158 @@
+/* tags */
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 50px;
+    background: purple;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main {
+    min-height: 700px;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+footer {
+    min-height: 300px;
+    background: darkslategray;
+}
+
+a.simple-button {
+    text-decoration: none;
+}
+
+a.simple-button:hover {
+    background-color: #f0f0f0;
+}
+
+hr {
+    margin: 10px 10px;
+    border-style: solid;
+    border-width: 0.03em;
+    border-color: #ededed;
+}
+
+/* classes */
+.top-menu {
+
+}
+
+.simple-box {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #fefefe;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.simple-button {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.col-3-wrap {
+    display: flex;
+}
+
+.col-3 {
+    width: 33.3%
+}
+
+/* IDs */
+#search {
+    min-width: 150px;
+    float: right;
+    margin: 10px 50px 0 0;
+    padding: 5px 10px;
+    color: gray;
+    background: white;
+    border: 0;
+}
+
+#user-name {
+    float: right;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #901090;
+    border: 0;
+}
+
+#circle {
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin: 3px 5px 0 0;
+    border-radius: 50%;
+    background: blueviolet;
+    color:white;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#main-info {
+    padding: 0px 20px;
+}
+
+#main-info h1 {
+    font-size: 1.5em;
+}
+
+#main-info h2 {
+    font-size: 1.2em;
+    color: #6f6f6f;
+    margin-bottom: 0;
+}
+
+#main-info .col-3 span {
+    margin: 0 5px;
+}
+
+#main-poster {
+    background-image: url("../images/bm_main.jpg");
+    width: 1000px;
+    height: 600px;
+}
+
+#title-area {
+}
+
+#rest-name {
+    font-size: 2em;
+}
+
+#score {
+    float: right;
+    background: orange;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: purple;
+    margin-top: 5px;
+}
+
+#rated-score {
+    color: white;
+}
+
+#quick-btn-area {
+    padding: 20px 0;
+}
+
+#quick-btn-area .simple-button {
+    color: gray;
+    padding: 5px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}

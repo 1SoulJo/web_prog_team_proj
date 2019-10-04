@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bier Markt, St. Lawrence, Toronto</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon_32.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/css/ol.css" type="text/css">
+    <style>
+        .map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a class="simple-button" id="user-name" href="#">
+        <div id="circle">H</div>
+        <span>Hansol Jo</span>
+    </a>
+    <a class="simple-button" id="search" href="#">
+        <span>Search</span>
+    </a>
+
+    <a href="#" class="top-menu">center</a>
+</header>
+
+<main>
+    <div class="simple-box">
+        <!--poster image-->
+        <img src="images/bm_main.jpg" alt="main image"/>
+
+        <div id="main-info">
+            <div id="title-area">
+                <span id="rest-name">Bier Markt</span>
+                <div id="score">
+                <span id="rated-score">4.5</span><span> / 5</span>
+                </div>
+            </div>
+
+            <!--buttons-->
+            <div id="quick-btn-area">
+                <a href="#" class="simple-button"><span>Order Now</span></a>
+                <a href="#" class="simple-button"><span>Bookmark</span></a>
+                <a href="#" class="simple-button"><span>Rate</span></a>
+                <a href="#" class="simple-button"><span>Add a review</span></a>
+            </div>
+
+            <hr/>
+
+            <!--restaurant info-->
+            <div>
+                <h1>Overview</h1>
+                <div class="col-3-wrap">
+                    <div class="col-3">
+                        <h2>Phone</h2>
+                        <span> +1 416 857 0486</span>
+                        <h2>Cuisines</h2>
+                        <span>
+                            Korean
+                        </span>
+                    </div>
+                    <div class="col-3">
+                        <h2>Opening hours</h2>
+                        <span>
+                            8:00AM - 10:00PM
+                        </span>
+                        <h2>Average cost</h2>
+                        <span>CA $30 for two people</span>>
+                    </div>
+                    <div class="col-3">
+                        <h2>Website</h2>
+                        <span>
+                            <a href="http://www.google.com" target="_blank">View Website</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!--map-->
+            <h1>Map</h1>
+            <iframe id="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB6baLwa2FU9ttiXYFdOaq82Kbzew-t58w&q=Bier+Markt,Toronto+ON"></iframe>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+
+</footer>
+</body>
+
+</html>
