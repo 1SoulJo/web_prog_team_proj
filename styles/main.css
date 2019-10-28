@@ -1,13 +1,17 @@
 /* tags */
 body {
     margin: 0;
+    font-family: Arial;
+}
+
+body a {
+    text-decoration: none;
 }
 
 header {
     min-height: 50px;
     background: purple;
     padding: 0 20px;
-    text-align: center;
 }
 
 main {
@@ -19,6 +23,10 @@ main {
 footer {
     min-height: 300px;
     background: darkslategray;
+}
+
+footer h3 {
+    color: #cccccc;
 }
 
 a.simple-button {
@@ -37,16 +45,25 @@ hr {
 }
 
 /* classes */
-.top-menu {
+.top-menu-area {
+    min-height: 50px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
 
+.top-menu {
+    background-color: #6f6f6f;
+    margin: 0 1px;
+    padding-top: 15px;
 }
 
 .simple-box {
-    margin: 0 auto;
-    width: 1200px;
+    margin: 0 auto 10px auto;
+    width: 1000px;
     background-color: #fefefe;
     border: 1px solid #eeeeee;
-    border-radius: 4px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -63,11 +80,116 @@ hr {
     width: 33.3%
 }
 
+.review-head {
+    padding: 10px;
+    height: 100px;
+}
+
+.review-head img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 8px;
+}
+
+.review-user-info {
+    vertical-align: top;
+    margin: 0 70px;
+}
+
+.review-user-name {
+    font-weight: bold;
+}
+
+.review-small-text {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.review-body {
+    padding: 0 10px;
+}
+
+.review-body p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.review-button-area {
+    height: 40px;
+    padding: 10px;
+}
+
+.review-button {
+    display: flex;
+    float: left;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.review-button-left {
+    background-color: #dddddd;
+    padding: 5px;
+}
+
+.review-button-right {
+    padding: 5px;
+}
+
+.review-footer {
+    min-height: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.review-footer input {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    min-height: 30px;
+}
+
+.follow-button-container {
+    padding: 5px 0;
+}
+
+.follow-button {
+    font-size: 0.8em;
+    padding: 5px;
+    color: gray;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list a {
+    color: #aaaaaa;
+}
+
 /* IDs */
+#top-logo {
+    color: lightgreen;
+    padding-top: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#brand-logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
 #search {
     min-width: 150px;
     float: right;
-    margin: 10px 50px 0 0;
+    margin: 10px 20px 0 0;
     padding: 5px 10px;
     color: gray;
     background: white;
@@ -115,11 +237,14 @@ hr {
 
 #main-poster {
     background-image: url("../images/bm_main.jpg");
-    width: 1000px;
-    height: 600px;
+    min-height: 400px;
+    color: #cccccc;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 #title-area {
+    margin-top: 10px;
 }
 
 #rest-name {
@@ -155,4 +280,49 @@ hr {
     height: 500px;
     border: 1px solid #dfdfdf;
     border-radius: 4px;
+}
+
+#footer-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#photos {
+    padding: 0 20px;
+}
+
+#photos h1 {
+    font-size: 1.5em;
+}
+
+#photos img {
+    border-radius: 7px;
+    width: 10%;
+}
+
+#reviews {
+    padding: 0 20px 20px 20px;
+}
+
+#reviews h1 {
+    font-size: 1.5em;
+}
+
+#reviews h4 {
+    margin-bottom: 0px;
+}
+
+#reviews input {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    min-height: 30px;
+    margin: 0 0 10px 0;
+}
+
+#add-your-review {
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    margin: 0 0 10px 0;
 }

@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/favicon_32.png" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/css/ol.css" type="text/css">
     <style>
         .map {
             height: 400px;
@@ -17,23 +16,35 @@
 <body>
 
 <header>
+    <!--user name box-->
     <a class="simple-button" id="user-name" href="#">
         <div id="circle">H</div>
         <span>Hansol Jo</span>
     </a>
+
+    <!--search box-->
     <a class="simple-button" id="search" href="#">
         <span>Search</span>
     </a>
 
-    <a href="#" class="top-menu">center</a>
+    <!--logo area-->
+    <a href="#">
+        <div id="top-logo">
+            <img src="images/brand_logo.png" alt="brand logo" id="brand-logo"/>
+            <span>Bon Apetit</span>
+        </div>
+    </a>
 </header>
 
 <main>
     <div class="simple-box">
         <!--poster image-->
-        <img src="images/bm_main.jpg" alt="main image"/>
+        <div id="main-poster">
+            St. Lawrence · Casual Dining, Bar
+        </div>
 
         <div id="main-info">
+            <!--restaurant title-->
             <div id="title-area">
                 <span id="rest-name">Bier Markt</span>
                 <div id="score">
@@ -69,7 +80,7 @@
                             8:00AM - 10:00PM
                         </span>
                         <h2>Average cost</h2>
-                        <span>CA $30 for two people</span>>
+                        <span>CA $30 for two people</span>
                     </div>
                     <div class="col-3">
                         <h2>Website</h2>
@@ -85,13 +96,199 @@
             <!--map-->
             <h1>Map</h1>
             <iframe id="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB6baLwa2FU9ttiXYFdOaq82Kbzew-t58w&q=Bier+Markt,Toronto+ON"></iframe>
+        </div>
+    </div>
 
+    <div class="simple-box">
+        <div id="photos">
+            <h1>Photos</h1>
+            <a href="#"><img src="images/rest_photo_1.jpg" alt="rest1"/></a>
+            <a href="#"><img src="images/rest_photo_2.jpg" alt="rest2"/></a>
+            <a href="#"><img src="images/rest_photo_3.jpg" alt="rest3"/></a>
+        </div>
+    </div>
+
+    <!--review area-->
+    <div class="simple-box">
+        <div id="reviews">
+            <h1>Reviews</h1>
+
+            <!--write a review-->
+            <h4>Write a review</h4>
+            <label>
+                <input type="text" placeholder="Help other foodies by sharing your review of Bier Markt" />
+            </label>
+            <div><a class="simple-button" href="#" id="add-your-review">Add Your Review</a></div>
+        </div>
+    </div>
+
+    <!--other users' reviews-->
+    <div class="simple-box review-area">
+        <div class="review-head">
+            <img src="images/review_1.jpg" />
+            <div class="review-user-info">
+                <div class="review-user-name">Gurmanjot</div>
+                <span class="review-small-text">230 reviews, 12,000 followers</span>
+                <div class="follow-button-container">
+                    <a class="simple-button follow-button" href="#">Follow</a>
+                </div>
+            </div>
+            <div>
+                <span class="review-small-text">1 month ago</span>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <p>
+                I love this place for various reasons the decor, beer selection, food quality and great service.<br>
+                The variety of beer available at this place is awesome, I have not seen a collection of beer so vast at a restaurant.<br>
+                Its definitely heaven for beer lovers with so much options to chose with and try.<br>
+                One can always find something to eat here with a pint of beer, though the food selection is not as huge as the beer section.<br>
+                But still the food quality is good. I have hosted few office dinners as well here and have loved the service provided by the staff.
+            </p>
+        </div>
+
+        <div class="review-button-area">
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Like</a>
+                <div class="review-button-right">23</div>
+            </div>
+
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Comment</a>
+                <div class="review-button-right">0</div>
+            </div>
+        </div>
+
+        <div class="review-footer">
+            <label>
+                <input type="text" placeholder="Write a comment... Use @ to tag friends" />
+            </label>
+        </div>
+    </div>
+    <div class="simple-box review-area">
+        <div class="review-head">
+            <img src="images/review_1.jpg" />
+            <div class="review-user-info">
+                <div class="review-user-name">Gurmanjot</div>
+                <span class="review-small-text">230 reviews, 12,000 followers</span>
+                <div class="follow-button-container">
+                    <a class="simple-button follow-button" href="#">Follow</a>
+                </div>
+            </div>
+            <div>
+                <span class="review-small-text">1 month ago</span>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <p>
+                I love this place for various reasons the decor, beer selection, food quality and great service.<br>
+                The variety of beer available at this place is awesome, I have not seen a collection of beer so vast at a restaurant.<br>
+                Its definitely heaven for beer lovers with so much options to chose with and try.<br>
+                One can always find something to eat here with a pint of beer, though the food selection is not as huge as the beer section.<br>
+                But still the food quality is good. I have hosted few office dinners as well here and have loved the service provided by the staff.
+            </p>
+        </div>
+
+        <div class="review-button-area">
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Like</a>
+                <div class="review-button-right">23</div>
+            </div>
+
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Comment</a>
+                <div class="review-button-right">0</div>
+            </div>
+        </div>
+
+        <div class="review-footer">
+            <label>
+                <input type="text" placeholder="Write a comment... Use @ to tag friends" />
+            </label>
+        </div>
+    </div>
+    <div class="simple-box review-area">
+        <div class="review-head">
+            <img src="images/review_1.jpg" />
+            <div class="review-user-info">
+                <div class="review-user-name">Gurmanjot</div>
+                <span class="review-small-text">230 reviews, 12,000 followers</span>
+                <div class="follow-button-container">
+                    <a class="simple-button follow-button" href="#">Follow</a>
+                </div>
+            </div>
+            <div>
+                <span class="review-small-text">1 month ago</span>
+            </div>
+        </div>
+
+        <div class="review-body">
+            <p>
+                I love this place for various reasons the decor, beer selection, food quality and great service.<br>
+                The variety of beer available at this place is awesome, I have not seen a collection of beer so vast at a restaurant.<br>
+                Its definitely heaven for beer lovers with so much options to chose with and try.<br>
+                One can always find something to eat here with a pint of beer, though the food selection is not as huge as the beer section.<br>
+                But still the food quality is good. I have hosted few office dinners as well here and have loved the service provided by the staff.
+            </p>
+        </div>
+
+        <div class="review-button-area">
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Like</a>
+                <div class="review-button-right">23</div>
+            </div>
+
+            <div class="review-button">
+                <a href="#" class="review-small-text review-button-left">Comment</a>
+                <div class="review-button-right">0</div>
+            </div>
+        </div>
+
+        <div class="review-footer">
+            <label>
+                <input type="text" placeholder="Write a comment... Use @ to tag friends" />
+            </label>
         </div>
     </div>
 </main>
 
 <footer>
-
+    <div class="col-3-wrap" id="footer-container">
+        <div class="col-3">
+            <h3>About Bon Apetit</h3>
+            <ul class="footer-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Foodies</h3>
+            <ul class="footer-list">
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Verified Users</a></li>
+                <li><a href="#">Blogger Help</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Restaurants</h3>
+            <ul class="footer-list">
+                <li><a href="#">Add a Restaurant</a></li>
+                <li><a href="#">Claim your Listing</a></li>
+                <li><a href="#">Business App</a></li>
+                <li><a href="#">Business Owner Guidelines</a></li>
+                <li><a href="#">Business Blog</a></li>
+                <li><a href="#">Restaurant Widgets</a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 
