@@ -4,11 +4,165 @@
     <title>Payment Options</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../restaurant_detail/images/favicon_32.png" />
-    <link rel="stylesheet" href="../restaurant_detail/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
+<script>
+    // simple function to toggle the visibility of a card info.
+    function toggleCardInfo(index) {
+        let body = document.getElementsByClassName("card-body")[index];
+        let arrow = document.getElementsByClassName("card-arrow")[index];
+        if (body.style.display === 'none') {
+            body.style.display = 'flex';
+            arrow.textContent = '▲';
+        } else {
+            body.style.display = 'none';
+            arrow.textContent = '▼';
+        }
+    }
+</script>
 
+<header>
+    <!--user name box-->
+    <a class="simple-button" id="user-name" href="#">
+        <div id="circle">H</div>
+        <span>Hansol Jo</span>
+    </a>
+
+    <!--search box-->
+    <a class="simple-button" id="search" href="#">
+        <span>Search</span>
+    </a>
+
+    <!--logo area-->
+    <a href="#">
+        <div id="top-logo">
+            <img src="images/brand_logo.png" alt="brand logo" id="brand-logo"/>
+            <span>Bon Appetit</span>
+        </div>
+    </a>
+</header>
+
+<main>
+    <div class="simple-box" id="payment-main">
+        <h1>Payment Options</h1>
+        <span>
+            An overview of your payment methods, settings and subscriptions with Bon Appetit.
+        </span>
+        <h2>Your credit cards</h2>
+        <ul>
+            <li class="card">
+                <a href="#" onclick="toggleCardInfo(0);">
+                    <div class="card-header">
+                        <div><img src="images/visa.png" alt="visa" /></div>
+                        <div class="card-name">Visa ending in 2093</div>
+                        <div class="card-expire">08/22</div>
+                        <div class="card-arrow">▲</div>
+                    </div>
+                </a>
+                <div class="card-body">
+                    <div class="card-owner-name">
+                        <strong>Name on card</strong><br><br>
+                        Hansol Jo
+                    </div>
+                    <div class="card-billing-address">
+                        <strong>Billing address</strong><br><br>
+                        1204-1140 Parkwest Place<br>
+                        Mississauga, Ontario, L5E 3K3<br>
+                        Canada<br>
+                        4168570485
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" onclick="toggleCardInfo(1);">
+                    <div class="card-header">
+                        <div><img src="images/master.gif" alt="visa" /></div>
+                        <div class="card-name">Master ending in 2044</div>
+                        <div class="card-expire">08/22</div>
+                        <div class="card-arrow">▼</div>
+                    </div>
+                </a>
+                <div class="card-body" style="display: none;">
+                    <div class="card-owner-name">
+                        <strong>Name on card</strong><br><br>
+                        Hansol Jo
+                    </div>
+                    <div class="card-billing-address">
+                        <strong>Billing address</strong><br><br>
+                        1204-1140 Parkwest Place<br>
+                        Mississauga, Ontario, L5E 3K3<br>
+                        Canada<br>
+                        4168570485
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" onclick="toggleCardInfo(2);">
+                    <div class="card-header">
+                        <div><img src="images/visa.png" alt="visa" /></div>
+                        <div class="card-name">Visa ending in 2023</div>
+                        <div class="card-expire">08/22</div>
+                        <div class="card-arrow">▼</div>
+                    </div>
+                </a>
+                <div class="card-body" style="display: none;">
+                    <div class="card-owner-name">
+                        <strong>Name on card</strong><br><br>
+                        Hansol Jo
+                    </div>
+                    <div class="card-billing-address">
+                        <strong>Billing address</strong><br><br>
+                        1204-1140 Parkwest Place<br>
+                        Mississauga, Ontario, L5E 3K3<br>
+                        Canada<br>
+                        4168570485
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h2>Add a New Payment Method</h2>
+    </div>
+</main>
+
+<footer>
+    <div class="col-3-wrap" id="footer-container">
+        <div class="col-3">
+            <h3>About Bon Appetit</h3>
+            <ul class="footer-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Foodies</h3>
+            <ul class="footer-list">
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Verified Users</a></li>
+                <li><a href="#">Blogger Help</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Restaurants</h3>
+            <ul class="footer-list">
+                <li><a href="#">Add a Restaurant</a></li>
+                <li><a href="#">Claim your Listing</a></li>
+                <li><a href="#">Business App</a></li>
+                <li><a href="#">Business Owner Guidelines</a></li>
+                <li><a href="#">Business Blog</a></li>
+                <li><a href="#">Restaurant Widgets</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
