@@ -47,7 +47,7 @@ hr {
 }
 
 ul {
-    width: 80%;
+    width: 90%;
 }
 
 li.card {
@@ -151,6 +151,30 @@ li:nth-last-child(1) {
 
 .card-owner-name, .card-billing-address {
     width: 300px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.card-new-columns {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.card-new-columns label {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.card-new-columns input {
+    width: 80%;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1em;
 }
 
 /* IDs */
@@ -269,6 +293,23 @@ li:nth-last-child(1) {
 }
 
 #payment-main {
-    width: 1000px;
-    padding: 0 10px;
+    width: 800px;
+    padding: 0 10px 20px 10px;
+}
+
+#card-images {
+    float: right;
+    margin-right: 40px;
+}
+
+#card-new-area {
+    margin-left: 20px;
+}
+
+#new-card-button {
+    margin-top: auto;
+    height: 35px;
+    font-size: 1.0em;
+    background: rgb(199,210,83);
+    background: linear-gradient(0deg, rgba(199,210,83,1) 19%, rgba(237,255,85,1) 100%);
 }

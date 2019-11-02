@@ -21,6 +21,15 @@
             arrow.textContent = '▼';
         }
     }
+
+    function toggleNewCard() {
+        let newCardArea = document.getElementById("card-new-area");
+        if (newCardArea.style.display === 'none') {
+            newCardArea.style.display = 'block';
+        } else {
+            newCardArea.style.display = 'none';
+        }
+    }
 </script>
 
 <header>
@@ -50,6 +59,8 @@
         <span>
             An overview of your payment methods, settings and subscriptions with Bon Appetit.
         </span>
+
+        <!-- List of added cards -->
         <h2>Your credit cards</h2>
         <ul>
             <li class="card">
@@ -123,7 +134,40 @@
             </li>
         </ul>
 
+        <!-- Adding new method -->
         <h2>Add a New Payment Method</h2>
+        <h3>Credit cards</h3>
+        Bon Appetit accepts all major credit and debit cards.
+        <div id="card-images">
+            <img src="images/master.gif" alt="master" />
+            <img src="images/visa.png" alt="visa" />
+            <img src="images/ae.png" alt="american" />
+        </div>
+
+        <div>
+            <a href="#" onclick="toggleNewCard();"><span> ∨ Add a card</span></a>
+
+            <div id="card-new-area" style="display: none;">
+                <p>Enter your card information:</p>
+                <div class="flexbox">
+                    <div class="card-new-columns">
+                        <label for="card-new-name">Name on card</label>
+                        <input type="text" id="card-new-name"/>
+                    </div>
+                    <div class="card-new-columns">
+                        <label for="card-new-number">Card number</label>
+                        <input type="text" id="card-new-number"/>
+                    </div>
+                    <div class="card-new-columns">
+                        <label for="card-new-date">Expiration date</label>
+                        <input type="month" id="card-new-date"/>
+                    </div>
+                    <div class="card-new-columns">
+                        <input id="new-card-button" type="submit" value="Add your card"/>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
