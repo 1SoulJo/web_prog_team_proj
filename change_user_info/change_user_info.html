@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Payment Options</title>
+    <title>Change user information</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../restaurant_detail/images/favicon_32.png" />
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
+
+<header>
+    <!--user name box-->
+    <a class="simple-button" id="user-name" href="#">
+        <div id="circle">H</div>
+        <span>Hansol Jo</span>
+    </a>
+
+    <!--search box-->
+    <a class="simple-button" id="search" href="#">
+        <span>Search</span>
+    </a>
+
+    <!--logo area-->
+    <a href="#">
+        <div id="top-logo">
+            <img src="images/brand_logo.png" alt="brand logo" id="brand-logo"/>
+            <span>Bon Appetit</span>
+        </div>
+    </a>
+</header>
+
+<main>
+    <div id="profile-main">
+        <div class="simple-box" id="left-float">
+            <div id="profile-image-area">
+                <img id="profile-image" alt="profile image" src="images/profile.jpg" width="300" height="280"/>
+                <a href="javascript:void()"><div id="change-image">Change image</div></a>
+            </div>
+            <div id="profile-name">
+                <div class="bigger-text">Hansol Jo</div>
+                <div id="loc-info">
+                    <img src="images/pin-icon-png-16.jpg" alt="pin" width="24" />
+                    <span>Toronto</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-area">
+            <h3>Profile information</h3>
+            <div class="simple-box" id="info-area">
+                <div class="single-question">
+                    <label for="name-input">Your full name*</label>
+                    <input type="text" id="name-input" class="normal-input" />
+                </div>
+                <div class="single-question">
+                    <label for="name-input">Your email address*</label>
+                    <input type="email" id="name-input" class="normal-input" />
+                </div>
+                <div class="single-question">
+                    <label for="name-input">Your mobile number</label>
+                    <input type="number" id="name-input" class="normal-input" />
+                </div>
+                <div class="single-question">
+                    <label for="loc-input">Where do you live?</label>
+                    <input type="text" id="loc-input" class="normal-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="col-3-wrap" id="footer-container">
+        <div class="col-3">
+            <h3>About Bon Appetit</h3>
+            <ul class="footer-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Foodies</h3>
+            <ul class="footer-list">
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Verified Users</a></li>
+                <li><a href="#">Blogger Help</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>For Restaurants</h3>
+            <ul class="footer-list">
+                <li><a href="#">Add a Restaurant</a></li>
+                <li><a href="#">Claim your Listing</a></li>
+                <li><a href="#">Business App</a></li>
+                <li><a href="#">Business Owner Guidelines</a></li>
+                <li><a href="#">Business Blog</a></li>
+                <li><a href="#">Restaurant Widgets</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    document.getElementById("profile-image-area").addEventListener("mouseenter", () => {
+        document.getElementById("profile-image").classList.add("blur");
+        document.getElementById("change-image").style.visibility = "visible";
+    });
+
+    document.getElementById("profile-image-area").addEventListener("mouseleave", () => {
+        document.getElementById("profile-image").classList.remove("blur");
+        document.getElementById("change-image").style.visibility = "hidden";
+    });
+</script>
 
 </body>
 
