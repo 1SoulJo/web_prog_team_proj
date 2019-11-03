@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+
+
+.wrapper{
+    background-image: url("../images/a1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    padding-top: 10px;
+    opacity: 1.0;
+    min-width: 460px;
+}
+
+ul{
+    margin-top: 10px;
+    margin-right: 20px;
+    list-style-type: none;
+    float: right;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+   
+    border: 1px solid #fff;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid #fff;
+    transition: 0.6s;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.Active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.maintitle{
+  position: absolute;
+  top: 42%;
+  bottom: 50%;
+  left: 36%;
+  right: 30%;
+}
+
+
+
+
+
+
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   
+  
+}
+
+
+
+.textbar{
+    width: 250px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    border: 2px solid wheat;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.jpg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+}
+
+.selectbox{
+    width: 90px;
+    box-sizing: border-box;
+    border: 2px solid wheat;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.jpg');
+    margin-right: 10px;
+}
+
+
+@media only screen and (min-width: 1351px) {
+    
+    .maintitle h1{
+        color: #fff;
+        font-size: 70px;
+        font-style: italic;
+        
+    }
+
+    .maintitle h2{
+        color: #fff;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+         
+    }
+
+     
+    }
+  
+@media only screen and (max-width: 1350px) {
+    
+    .maintitle h1{
+        color: #fff;
+        font-size: 40px;
+        font-style: italic;
+        
+    }
+    .maintitle h2{
+        color: #fff;
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+         
+    }
+
+}
+
+    @media only screen and (max-width: 785px)  {
+    
+        .maintitle h1{
+            color: #fff;
+            font-size:25px;
+            font-style: italic;
+            
+        }
+
+        .maintitle h2{
+            color: #fff;
+            font-size: 10px;
+            font-style: italic;
+            text-align: center;
+             
+        }
+        .geoloc{
+            margin-top: 10px;
+        }
+        .selectbox{
+        margin-bottom: 10px;
+     }
+    }
+  
+    @media only screen and (max-width: 778px)  {
+        .img_food{
+            margin-left: 163px;
+        }
+        
+
+    }

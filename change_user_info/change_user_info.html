@@ -35,7 +35,7 @@
         <div class="simple-box" id="left-float">
             <div id="profile-image-area">
                 <img id="profile-image" alt="profile image" src="images/profile.jpg" width="300" height="280"/>
-                <a href="javascript:void()"><div id="change-image">Change image</div></a>
+                <a href="javascript:void(0)" onclick="document.getElementById('file-input').click();"><div id="change-image">Change image</div></a>
             </div>
             <div id="profile-name">
                 <div class="bigger-text">Hansol Jo</div>
@@ -51,24 +51,93 @@
             <div class="simple-box" id="info-area">
                 <div class="single-question">
                     <label for="name-input">Your full name*</label>
-                    <input type="text" id="name-input" class="normal-input" />
+                    <input type="text" id="name-input" class="normal-input" placeholder="Hansol Jo"/>
                 </div>
+                <hr>
                 <div class="single-question">
-                    <label for="name-input">Your email address*</label>
-                    <input type="email" id="name-input" class="normal-input" />
+                    <label for="email-input">Your email address*</label>
+                    <input type="email" id="email-input" class="normal-input" placeholder="hansol.jo@gmail.com"/>
                 </div>
+                <hr>
                 <div class="single-question">
-                    <label for="name-input">Your mobile number</label>
-                    <input type="number" id="name-input" class="normal-input" />
+                    <label for="mobile-input">Your mobile number</label>
+                    <input type="number" id="mobile-input" class="normal-input" placeholder="416-857-0486"/>
                 </div>
+                <hr>
                 <div class="single-question">
                     <label for="loc-input">Where do you live?</label>
-                    <input type="text" id="loc-input" class="normal-input" />
+                    <input type="text" id="loc-input" class="normal-input" placeholder="Toronto"/>
                 </div>
+                <hr>
+                <div class="single-question">
+                    <label for="passwd-input">Change password</label>
+                    <input type="password" id="passwd-input" class="normal-input" />
+                    <label for="passwd-input2">Confirm your password</label>
+                    <input type="password" id="passwd-input2" class="normal-input" />
+                </div>
+                <a href="javascript:void(0)">
+                    <div class="simple-box save-btn">Save</div>
+                </a>
+            </div>
+
+            <h3>Notification preferences</h3>
+            <div class="simple-box" id="notification-area">
+                <div class="flexbox flex-right-align">
+                    <div class="notification-method">Email</div>
+                    <div class="notification-method">Mobile</div>
+                </div><br>
+                <div class="single-question flexbox" style="justify-content: flex-start">
+                    <div>Activities on my reviews</div>
+                    <div class="checkbox-area" >
+                        <label class="container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="single-question flexbox" style="justify-content: flex-start">
+                    <div>Someone follows me</div>
+                    <div class="checkbox-area" >
+                        <label class="container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="single-question flexbox" style="justify-content: flex-start">
+                    <div>Important updates from Bon Appetit</div>
+                    <div class="checkbox-area" >
+                        <label class="container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <a href="javascript:void(0)">
+                    <div class="simple-box save-btn">Save</div>
+                </a>
             </div>
         </div>
     </div>
 </main>
+
+<!-- file browser (hidden) -->
+<input id="file-input" type="file" name="name" style="display: none;" />
 
 <footer>
     <div class="col-3-wrap" id="footer-container">

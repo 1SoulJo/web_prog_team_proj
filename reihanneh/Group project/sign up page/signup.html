@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang ="en">
+     
+    <head>
+        <title>Sign Up Page!</title>
+        <meta name = "viewport" content="width=device-width ,initial-scale = 1.0"> 
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href="styles/responsive.css" />
+       </head>
+       
+       
+       <body>
+        <main>
+                <header>
+                    <img class="img_food" src="images/logo10.gif" alt="logo image">
+                      <select class="selectbox">
+                          <option value="Toronto">Toronto</option>
+                          <option value="Etobicoke">Etobicoke</option>
+                          <option value="Brampton">Brampton</option>
+                          <option value="Finch">Finch</option>
+                        </select>
+                     <input type="text" placeholder="Search.." class=textbar>
+                     <input type="submit" value="Search" class="btn">
+                   </header>
+                   
+                   <div class="grid-container">
+           
+           <form method="POST">
+               <fieldset>
+           <legend><b>Sign Up</b></legend>
+           <p>Name</p>
+           <input type="text" name="firstname">
+           <p>Email Address</p>
+           <input type="text" name="email">
+
+           <p>Phone Number</p>
+           <select>
+                <option value="canada">CA</option>
+                <option value="america">USA</option>
+              </select>
+           <input type="tel" name="usrtel">
+
+           <p>Password</p>
+           <input type="password" name="password">
+           <p>Confirm Password</p>
+           <input type="password" name="password"><br><br>
+
+           <div class="policy1">
+           <input type="checkbox" name="agreement"> agree to this website's 
+              <a href="service.html"><b>Terms of Service</b></a>,
+              <a href="privacy.html"><b>Privacy Policy</b></a> and 
+               <a href="content.html"><b>Content Policies</b></a>. <br><br>
+              </div>
+           
+           <div class= "formBtn">
+           <input id ="registerbtn" type = "submit" value="Register">
+           <input id ="signbtn" type = "submit" value="Sign in">
+          </div>
+           <p id="policy2">By creating an account, you agree to this website's 
+                          <a href= "service.html"> Terms of Service</a>, 
+                          <a href= "cookie.html"> Cookie Policy</a>, 
+                          <a href= "privacy.html"> Privacy Policy</a> and 
+                          <a href= "content.html"> Content Policies</a>.</p>
+               </fieldset>
+            </form>
+          </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+            <h2 class="h2class">Humber College North Campus - Team : Hypertext Assassins </h2>
+            <h4>Email - info@hypertextassassins.com   Phone - 444-55-9261</h4>
+          </div>
+          </footer>
+        
+       </body>
+</html>
