@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo.png" />
+    <title>Bon Appetit</title>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body> 
+  <div class="wrapper">
+      <header>
+          <!--logo area-->
+          <a href="#">
+              <div id="top-logo">
+                  <img src="../logo.png" alt="brand logo" id="brand-logo"/>
+                  <span>Bon Appetit</span>
+              </div>
+          </a>
+        <div id="menu">
+            <ul>
+                <li class="Active"><a href="#">Home</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="../sign_in/signin.html">Login</a></li>
+                <li><a href="../sign_up/signup.html">Sign Up</a></li>
+                <li><a href="../user_profile/user_profile.html">My Account</a></li>
+            </ul>
+        </div>
+      </header>
+
+     <main class="maintitle"> 
+       <h1>Bon Appetit...</h1>
+       <h2>Best Friend of All Foodies !!</h2>
+ 
+      <section class="geoloc">  
+         <select class="selectbox">
+             <option value="Toronto">Toronto</option>
+             <option value="Etobicoke">Etobicoke</option>
+             <option value="Brampton">Brampton</option>
+             <option value="Finch">Finch</option>
+           </select>
+        <input type="text" placeholder="Search.." class=textbar>
+        <input type="submit" value="Search" class="btn" onclick="location.href='../restaurant_detail/res_detail_bm.html';">
+   
+      </section>
+    </main>
+
+
+      <footer>
+          <div class="col-3-wrap" id="footer-container">
+              <div class="col-3">
+                  <h3>About Bon Appetit</h3>
+                  <ul class="footer-list">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Culture</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <h3>For Foodies</h3>
+                  <ul class="footer-list">
+                      <li><a href="#">Code of Conduct</a></li>
+                      <li><a href="#">Community</a></li>
+                      <li><a href="#">Verified Users</a></li>
+                      <li><a href="#">Blogger Help</a></li>
+                      <li><a href="#">Developers</a></li>
+                      <li><a href="#">Mobile Apps</a></li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <h3>For Restaurants</h3>
+                  <ul class="footer-list">
+                      <li><a href="#">Add a Restaurant</a></li>
+                      <li><a href="#">Claim your Listing</a></li>
+                      <li><a href="#">Business App</a></li>
+                      <li><a href="#">Business Owner Guidelines</a></li>
+                      <li><a href="#">Business Blog</a></li>
+                      <li><a href="#">Restaurant Widgets</a></li>
+                  </ul>
+              </div>
+          </div>
+      </footer>
+</body>
+</html>
